@@ -1,8 +1,124 @@
 <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+s
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #475f81;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-<html>
-  <head>
-  </head>
-  <body>
-  </body>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: #304066;
+      color: #ffffff;
+      padding: 16px 24px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      position: sticky;
+      bottom: 0;
+      z-index: 100;
+      background-color: #384157;
+      color: #94a3b8;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    main {
+      flex: 1;
+      padding: 24px 16px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      flex: 0 1 260px;
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px) scale(1.03);
+      border-color: #38bdf8;
+      box-shadow: 0 10px 24px rgba(14, 165, 233, 0.25), 0 0 18px rgba(50, 189, 248, 0.35);
+    }
+
+    .card img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card p {
+      padding: 12px 14px;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galeri Portofolio Adrian</h1>
+  </header>
+
+  <main>
+    <div class="flex-container">
+      <div class="card">
+        <img src="picture/aternate 2.jpg" alt="gambar sketsa alternative 2 pada storytelling, sketsa tradisional a4">
+        <p>gambar sketsa alternative 2 pada storytelling, sketsa tradisional a4</p>
+      </div>
+
+      <div class="card">
+        <img src="picture/Primal Dialga.png" alt="gambar primal dialga yang dibuat di Infinite Paint pada 15 november 2025">
+        <p>gambar primal dialga yang dibuat di Infinite Paint pada 15 november 2025</p>
+      </div>
+
+      <div class="card">
+        <img src="picture/sus.png" alt="gamabr oc teman sma yanng dibikinn untuk hari uang tahun mereka, gambar iin dibuat di Ibist Paint pada 17 oktober 2024">
+        <p>gamabr oc teman sma yanng dibikinn untuk hari uang tahun mereka, gambar iin dibuat di Ibist Paint pada 17 oktober 2024</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; @calamarivoid</p>
+  </footer>
+
+</body>
 </html>
